@@ -1,0 +1,21 @@
+{
+  "tasks": {
+    "build": "deno run --allow-all build.ts",
+    "lint": "deno lint",
+    "test": "deno test --parallel"
+  },
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"],
+    "strict": true
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2
+  },
+  "imports": {
+    "@luca/esbuild-deno-loader": "jsr:@luca/esbuild-deno-loader",
+    "@std/assert": "jsr:@std/assert",
+    "npm/esbuild": "npm:esbuild"
+  }
+}

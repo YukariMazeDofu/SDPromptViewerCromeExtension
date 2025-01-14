@@ -1,0 +1,22 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Deno DevContainer",
+  "dockerComposeFile": ["compose.yml"],
+  "service": "deno",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "deno.enable": true,
+        "deno.lint": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "denoland.vscode-deno"
+      },
+      "extensions": [
+        "denoland.vscode-deno",
+        "oderwat.indent-rainbow"
+      ]
+    }
+  },
+  "remoteUser": "root",
+  "workspaceFolder": "/app"
+}
